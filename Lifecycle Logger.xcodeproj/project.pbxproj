@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7ED2709E23F6D637005E89D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2709D23F6D637005E89D2 /* AppDelegate.swift */; };
-		7ED270A023F6D637005E89D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2709F23F6D637005E89D2 /* SceneDelegate.swift */; };
 		7ED270A223F6D637005E89D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED270A123F6D637005E89D2 /* ViewController.swift */; };
 		7ED270A523F6D637005E89D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A323F6D637005E89D2 /* Main.storyboard */; };
 		7ED270A723F6D639005E89D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A623F6D639005E89D2 /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		7ED2709A23F6D637005E89D2 /* Lifecycle Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lifecycle Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED2709D23F6D637005E89D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7ED2709F23F6D637005E89D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7ED270A123F6D637005E89D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7ED270A423F6D637005E89D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ED270A623F6D639005E89D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				7ED2709D23F6D637005E89D2 /* AppDelegate.swift */,
-				7ED2709F23F6D637005E89D2 /* SceneDelegate.swift */,
 				7ED270A123F6D637005E89D2 /* ViewController.swift */,
 				7ED270A323F6D637005E89D2 /* Main.storyboard */,
 				7ED270A623F6D639005E89D2 /* Assets.xcassets */,
@@ -202,7 +199,6 @@
 			files = (
 				7ED270A223F6D637005E89D2 /* ViewController.swift in Sources */,
 				7ED2709E23F6D637005E89D2 /* AppDelegate.swift in Sources */,
-				7ED270A023F6D637005E89D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -364,15 +360,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7848UQT59;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = "Lifecycle Logger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-Logger";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "\"-DDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerDebug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,15 +381,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7848UQT59;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = "Lifecycle Logger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-Logger";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerRelease";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -448,7 +449,7 @@
 				7ED270B823F6D639005E89D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7ED270B923F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle Logger" */ = {
 			isa = XCConfigurationList;
@@ -457,7 +458,7 @@
 				7ED270BB23F6D639005E89D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7ED270BC23F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle LoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -466,7 +467,7 @@
 				7ED270BE23F6D639005E89D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

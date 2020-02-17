@@ -8,30 +8,79 @@
 
 import UIKit
 
+#if DEBUG
+let debugVersion = true
+#else
+let debugVersion = false
+#endif
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+    
 
-
+    var pastState = "No status"
+    var currentState  = String()
+    var funcName = String()
+    
+    func appState () {
+        switch UIApplication.shared.applicationState {
+        case .active where currentState != "Active":
+            currentState = "Active"
+            print("Приложение перешло из статуса \(pastState) в статус \(currentState). Метод: \(funcName)")
+            pastState = currentState
+        case .background where currentState != "Background":
+            currentState = "Background"
+            print("Приложение перешло из статуса \(pastState) в статус \(currentState). Метод: \(funcName)")
+            pastState = currentState
+        case .inactive where currentState != "Inactive":
+            currentState = "Inactive"
+            print("Приложение перешло из статуса \(pastState) в статус \(currentState). Метод: \(funcName)")
+            pastState = currentState
+        default:
+            print("Состояние приложения не изменилось. Метод: \(funcName)")
+        }
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        funcName = #function
+        debugVersion ? appState() : ()
+        return true
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        funcName = #function
+        debugVersion ? appState() : ()
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        funcName = #function
+        debugVersion ? appState() : ()
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        funcName = #function
+        debugVersion ? appState() : ()
     }
-
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        funcName = #function
+        debugVersion ? appState() : ()
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        funcName = #function
+        debugVersion ? appState() : ()
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        funcName = #function
+        debugVersion ? appState() : ()
+    }
 
 }
 
