@@ -38,7 +38,7 @@
 		7ED2709123F6D637005E89D2 = {
 			isa = PBXGroup;
 			children = (
-				7ED2709C23F6D637005E89D2 /* TFS_Chat */,
+				7ED2709C23F6D637005E89D2 /* TFS-Chat */,
 				7ED2709B23F6D637005E89D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7ED2709C23F6D637005E89D2 /* TFS_Chat */ = {
+		7ED2709C23F6D637005E89D2 /* TFS-Chat */ = {
 			isa = PBXGroup;
 			children = (
 				7ED2709D23F6D637005E89D2 /* AppDelegate.swift */,
@@ -61,7 +61,6 @@
 				7ED270A823F6D639005E89D2 /* LaunchScreen.storyboard */,
 				7ED270AB23F6D639005E89D2 /* Info.plist */,
 			);
-			name = TFS_Chat;
 			path = "TFS-Chat";
 			sourceTree = "<group>";
 		};
