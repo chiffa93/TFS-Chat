@@ -15,15 +15,15 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7ED2709923F6D637005E89D2"
-               BuildableName = "Lifecycle Logger.app"
-               BlueprintName = "Lifecycle Logger"
-               ReferencedContainer = "container:Lifecycle Logger.xcodeproj">
+               BuildableName = "TFS-Chat.app"
+               BlueprintName = "TFS-Chat"
+               ReferencedContainer = "container:TFS-Chat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
@@ -31,7 +31,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,14 +45,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7ED2709923F6D637005E89D2"
-            BuildableName = "Lifecycle Logger.app"
-            BlueprintName = "Lifecycle Logger"
-            ReferencedContainer = "container:Lifecycle Logger.xcodeproj">
+            BuildableName = "TFS-Chat.app"
+            BlueprintName = "TFS-Chat"
+            ReferencedContainer = "container:TFS-Chat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -62,14 +62,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7ED2709923F6D637005E89D2"
-            BuildableName = "Lifecycle Logger.app"
-            BlueprintName = "Lifecycle Logger"
-            ReferencedContainer = "container:Lifecycle Logger.xcodeproj">
+            BuildableName = "TFS-Chat.app"
+            BlueprintName = "TFS-Chat"
+            ReferencedContainer = "container:TFS-Chat.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Release">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

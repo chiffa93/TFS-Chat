@@ -12,41 +12,20 @@
 		7ED270A523F6D637005E89D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A323F6D637005E89D2 /* Main.storyboard */; };
 		7ED270A723F6D639005E89D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A623F6D639005E89D2 /* Assets.xcassets */; };
 		7ED270AA23F6D639005E89D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A823F6D639005E89D2 /* LaunchScreen.storyboard */; };
-		7ED270B523F6D639005E89D2 /* Lifecycle_LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED270B423F6D639005E89D2 /* Lifecycle_LoggerTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7ED270B123F6D639005E89D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7ED2709223F6D637005E89D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7ED2709923F6D637005E89D2;
-			remoteInfo = "Lifecycle Logger";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		7ED2709A23F6D637005E89D2 /* Lifecycle Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lifecycle Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED2709A23F6D637005E89D2 /* TFS-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFS-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED2709D23F6D637005E89D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ED270A123F6D637005E89D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7ED270A423F6D637005E89D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ED270A623F6D639005E89D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ED270A923F6D639005E89D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ED270AB23F6D639005E89D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7ED270B023F6D639005E89D2 /* Lifecycle LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lifecycle LoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ED270B423F6D639005E89D2 /* Lifecycle_LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifecycle_LoggerTests.swift; sourceTree = "<group>"; };
-		7ED270B623F6D639005E89D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7ED2709723F6D637005E89D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7ED270AD23F6D639005E89D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,8 +38,7 @@
 		7ED2709123F6D637005E89D2 = {
 			isa = PBXGroup;
 			children = (
-				7ED2709C23F6D637005E89D2 /* Lifecycle Logger */,
-				7ED270B323F6D639005E89D2 /* Lifecycle LoggerTests */,
+				7ED2709C23F6D637005E89D2 /* TFS_Chat */,
 				7ED2709B23F6D637005E89D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +46,12 @@
 		7ED2709B23F6D637005E89D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7ED2709A23F6D637005E89D2 /* Lifecycle Logger.app */,
-				7ED270B023F6D639005E89D2 /* Lifecycle LoggerTests.xctest */,
+				7ED2709A23F6D637005E89D2 /* TFS-Chat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7ED2709C23F6D637005E89D2 /* Lifecycle Logger */ = {
+		7ED2709C23F6D637005E89D2 /* TFS_Chat */ = {
 			isa = PBXGroup;
 			children = (
 				7ED2709D23F6D637005E89D2 /* AppDelegate.swift */,
@@ -84,24 +61,16 @@
 				7ED270A823F6D639005E89D2 /* LaunchScreen.storyboard */,
 				7ED270AB23F6D639005E89D2 /* Info.plist */,
 			);
-			path = "Lifecycle Logger";
-			sourceTree = "<group>";
-		};
-		7ED270B323F6D639005E89D2 /* Lifecycle LoggerTests */ = {
-			isa = PBXGroup;
-			children = (
-				7ED270B423F6D639005E89D2 /* Lifecycle_LoggerTests.swift */,
-				7ED270B623F6D639005E89D2 /* Info.plist */,
-			);
-			path = "Lifecycle LoggerTests";
+			name = TFS_Chat;
+			path = "TFS-Chat";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7ED2709923F6D637005E89D2 /* Lifecycle Logger */ = {
+		7ED2709923F6D637005E89D2 /* TFS-Chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7ED270B923F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle Logger" */;
+			buildConfigurationList = 7ED270B923F6D639005E89D2 /* Build configuration list for PBXNativeTarget "TFS-Chat" */;
 			buildPhases = (
 				7ED2709623F6D637005E89D2 /* Sources */,
 				7ED2709723F6D637005E89D2 /* Frameworks */,
@@ -111,28 +80,10 @@
 			);
 			dependencies = (
 			);
-			name = "Lifecycle Logger";
+			name = "TFS-Chat";
 			productName = "Lifecycle Logger";
-			productReference = 7ED2709A23F6D637005E89D2 /* Lifecycle Logger.app */;
+			productReference = 7ED2709A23F6D637005E89D2 /* TFS-Chat.app */;
 			productType = "com.apple.product-type.application";
-		};
-		7ED270AF23F6D639005E89D2 /* Lifecycle LoggerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7ED270BC23F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle LoggerTests" */;
-			buildPhases = (
-				7ED270AC23F6D639005E89D2 /* Sources */,
-				7ED270AD23F6D639005E89D2 /* Frameworks */,
-				7ED270AE23F6D639005E89D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7ED270B223F6D639005E89D2 /* PBXTargetDependency */,
-			);
-			name = "Lifecycle LoggerTests";
-			productName = "Lifecycle LoggerTests";
-			productReference = 7ED270B023F6D639005E89D2 /* Lifecycle LoggerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -147,13 +98,9 @@
 					7ED2709923F6D637005E89D2 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					7ED270AF23F6D639005E89D2 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 7ED2709923F6D637005E89D2;
-					};
 				};
 			};
-			buildConfigurationList = 7ED2709523F6D637005E89D2 /* Build configuration list for PBXProject "Lifecycle Logger" */;
+			buildConfigurationList = 7ED2709523F6D637005E89D2 /* Build configuration list for PBXProject "TFS-Chat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,8 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7ED2709923F6D637005E89D2 /* Lifecycle Logger */,
-				7ED270AF23F6D639005E89D2 /* Lifecycle LoggerTests */,
+				7ED2709923F6D637005E89D2 /* TFS-Chat */,
 			);
 		};
 /* End PBXProject section */
@@ -183,13 +129,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ED270AE23F6D639005E89D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -202,23 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7ED270AC23F6D639005E89D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7ED270B523F6D639005E89D2 /* Lifecycle_LoggerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7ED270B223F6D639005E89D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7ED2709923F6D637005E89D2 /* Lifecycle Logger */;
-			targetProxy = 7ED270B123F6D639005E89D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7ED270A323F6D637005E89D2 /* Main.storyboard */ = {
@@ -361,14 +284,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7848UQT59;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				INFOPLIST_FILE = "Lifecycle Logger/Info.plist";
+				INFOPLIST_FILE = "TFS-Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				"OTHER_SWIFT_FLAGS[arch=*]" = "\"-DDEBUG\"";
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerDebug";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.TFS-ChatDebug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -382,67 +305,23 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R7848UQT59;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
-				INFOPLIST_FILE = "Lifecycle Logger/Info.plist";
+				INFOPLIST_FILE = "TFS-Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerRelease";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.TFS-ChatRelease";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		7ED270BD23F6D639005E89D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R7848UQT59;
-				INFOPLIST_FILE = "Lifecycle LoggerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifecycle Logger.app/Lifecycle Logger";
-			};
-			name = Debug;
-		};
-		7ED270BE23F6D639005E89D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R7848UQT59;
-				INFOPLIST_FILE = "Lifecycle LoggerTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "a.kramerov.Lifecycle-LoggerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifecycle Logger.app/Lifecycle Logger";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7ED2709523F6D637005E89D2 /* Build configuration list for PBXProject "Lifecycle Logger" */ = {
+		7ED2709523F6D637005E89D2 /* Build configuration list for PBXProject "TFS-Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7ED270B723F6D639005E89D2 /* Debug */,
@@ -451,20 +330,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		7ED270B923F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle Logger" */ = {
+		7ED270B923F6D639005E89D2 /* Build configuration list for PBXNativeTarget "TFS-Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7ED270BA23F6D639005E89D2 /* Debug */,
 				7ED270BB23F6D639005E89D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		7ED270BC23F6D639005E89D2 /* Build configuration list for PBXNativeTarget "Lifecycle LoggerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7ED270BD23F6D639005E89D2 /* Debug */,
-				7ED270BE23F6D639005E89D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
