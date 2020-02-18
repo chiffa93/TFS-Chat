@@ -1,0 +1,7 @@
+xcuserdata/
+
+*.xcscmblueprint
+*.xccheckout
+
+build/
+DerivedData/
