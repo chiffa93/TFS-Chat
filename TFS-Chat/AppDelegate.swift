@@ -57,30 +57,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        funcName = #function
-        debugVersion ? appState() : ()
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        funcName = #function
-        debugVersion ? appState() : ()
-    }
-    
-    func applicationWillResignActive(_ application: UIApplication) {
-        funcName = #function
-        debugVersion ? appState() : ()
-    }
-    
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        funcName = #function
-        debugVersion ? appState() : ()
-    }
-    
-    func applicationWillTerminate(_ application: UIApplication) {
-        funcName = #function
-        debugVersion ? appState() : ()
-    }
-
 }
 
