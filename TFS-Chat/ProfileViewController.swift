@@ -8,8 +8,14 @@
 
 import UIKit
 
+
+
+protocol imageDataDelegate {
+       func passImage(image: UIImage)
+   }
+
+
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
     
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var changeProfilePictureButton: UIButton!
@@ -17,7 +23,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
-    
+    @IBOutlet weak var aboutUserLabel: UILabel!
+    var delegate: imageDataDelegate?
 //    required init?(coder aDecoder: NSCoder) {
 //        super.init(coder: aDecoder)
 //        print(editButton.frame)
@@ -25,6 +32,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         print(editButton.frame)
         editButton.layer.cornerRadius = 10
         editButton.layer.borderWidth = 2
@@ -32,6 +40,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         if let image = getSavedImage(named: "profilePicture") {
             profilePicture.image = image
         }
+        aboutUserLabel.text = "🌯 Люблю шаверму\n✖️ Быстро и неправильно умножаю в уме\n👨‍🏫 Эксперт во всём"
     }
     
     override func viewDidLayoutSubviews() {
@@ -44,11 +53,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if let presenter = presentingViewController as? MainViewController {
-            presenter.profileButton.setImage(profilePicture.image, for: .normal)
+        if let image = self.profilePicture.image{
+            delegate?.passImage(image: image)
         }
     }
-    
     
     @IBAction func closePressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
