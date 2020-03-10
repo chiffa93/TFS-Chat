@@ -16,7 +16,7 @@ class ConversatonViewController: UIViewController, UITableViewDelegate, UITableV
         case income
         case outcome
     }
-    var messageArray = [(senderState.income ,MessageCellModel(text: "Привет")), (senderState.outcome, MessageCellModel(text: "Как дела?")), (senderState.income, MessageCellModel(text: "Нормально")), (senderState.outcome, MessageCellModel(text: "Что делаешь?")), (senderState.income, MessageCellModel(text: "Ничего")), (senderState.outcome, MessageCellModel(text: "Ух, бля, а вот это реально большое сообщение, чтобы я мог всечь в то как обрабатывается текст в ячейке")), (senderState.income, MessageCellModel(text: "Ну что я могу сказать, это рили заебись сообщение.")), (senderState.income, MessageCellModel(text: "Да если бы я был Игоряном, я бы вообще подумал что это реальный чат")), (senderState.outcome, MessageCellModel(text: "Это да\nОн никогда не отличался особым умом")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.income ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет")), (senderState.outcome ,MessageCellModel(text: "Привет"))]
+    var messageArray: [(state: senderState, message: MessageCellModel)] = [(.income, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Как дела?")), (.income, MessageCellModel(text: "Нормально")), (.outcome, MessageCellModel(text: "Что делаешь?")), (.income, MessageCellModel(text: "Ничего")), (.outcome, MessageCellModel(text: "Ух, бля, а вот это реально большое сообщение, чтобы я мог всечь в то как обрабатывается текст в ячейке")), (.income, MessageCellModel(text: "Ну что я могу сказать, это рили заебись сообщение.")), (.income, MessageCellModel(text: "Да если бы я был Игоряном, я бы вообще подумал что это реальный чат")), (.outcome, MessageCellModel(text: "Это да\nОн никогда не отличался особым умом")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.income, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет")), (.outcome, MessageCellModel(text: "Привет"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,22 +37,23 @@ class ConversatonViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch messageArray.reversed()[indexPath.row].0 {
+        let reversedMessagesArray = Array(messageArray.reversed())
+        switch reversedMessagesArray[indexPath.row].state {
         case .income:
             let cell = messagesTable.dequeueReusableCell(withIdentifier: "incomeMessageCellId", for: indexPath) as! IncomeMessageCell
             cell.transform = CGAffineTransform(scaleX: 1, y: -1)
-            cell.configure(with: messageArray.reversed()[indexPath.row].1)
-            //cell.incomeMessageView.layer.cornerRadius = cell.incomeMessageView.frame.width * 0.04
+            cell.configure(with: reversedMessagesArray[indexPath.row].message)
+            cell.incomeMessageView.layer.cornerRadius = 10
+            cell.isUserInteractionEnabled = false
             return cell
         case .outcome:
             let cell = messagesTable.dequeueReusableCell(withIdentifier: "outcomeMessageCellId", for: indexPath) as! OutcomeMessageCell
             cell.transform = CGAffineTransform(scaleX: 1, y: -1)
-            cell.configure(with: messageArray.reversed()[indexPath.row].1)
-            //cell.outcomeMessageView.layer.cornerRadius = cell.outcomeMessageView.frame.width * 0.04
+            cell.configure(with: reversedMessagesArray[indexPath.row].message)
+            cell.outcomeMessageView.layer.cornerRadius = 10
+            cell.isUserInteractionEnabled = false
             return cell
         }
-//        let cell = messagesTable.dequeueReusableCell(withIdentifier: "incomeMessageCellId", for: indexPath) as! MessageCell
-
     }
 }
     
