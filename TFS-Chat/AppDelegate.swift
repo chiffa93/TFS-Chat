@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var currentState  = String()
     var funcName = String()
     
+    
     func appState () {
         switch UIApplication.shared.applicationState {
         case .active where currentState != "Active":

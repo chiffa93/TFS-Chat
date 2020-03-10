@@ -7,19 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E461124240E4E740040F5FA /* ConversationCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E461123240E4E740040F5FA /* ConversationCellView.xib */; };
+		7E461126240E4E860040F5FA /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E461125240E4E860040F5FA /* ConversationCell.swift */; };
+		7E461129240EB1C60040F5FA /* CellModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E461128240EB1C60040F5FA /* CellModels.swift */; };
+		7E46112B241695980040F5FA /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E46112A241695970040F5FA /* ConversationViewController.swift */; };
+		7E46112E2416A8050040F5FA /* IncomeMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E46112C2416A8050040F5FA /* IncomeMessageCell.swift */; };
+		7E46112F2416A8050040F5FA /* IncomeMessageCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E46112D2416A8050040F5FA /* IncomeMessageCellView.xib */; };
+		7E4611312416BD0D0040F5FA /* OutcomeMessageCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E4611302416BD0D0040F5FA /* OutcomeMessageCellView.xib */; };
+		7E4611332416D0500040F5FA /* OutcomeMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4611322416D0500040F5FA /* OutcomeMessageCell.swift */; };
 		7E5D0DED2402D088004B24D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D0DEC2402D088004B24D0 /* ProfileViewController.swift */; };
 		7ED2709E23F6D637005E89D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED2709D23F6D637005E89D2 /* AppDelegate.swift */; };
-		7ED270A223F6D637005E89D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED270A123F6D637005E89D2 /* MainViewController.swift */; };
+		7ED270A223F6D637005E89D2 /* ConversationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED270A123F6D637005E89D2 /* ConversationsListViewController.swift */; };
 		7ED270A523F6D637005E89D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A323F6D637005E89D2 /* Main.storyboard */; };
 		7ED270A723F6D639005E89D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A623F6D639005E89D2 /* Assets.xcassets */; };
 		7ED270AA23F6D639005E89D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ED270A823F6D639005E89D2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E461123240E4E740040F5FA /* ConversationCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationCellView.xib; sourceTree = "<group>"; };
+		7E461125240E4E860040F5FA /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		7E461128240EB1C60040F5FA /* CellModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModels.swift; sourceTree = "<group>"; };
+		7E46112A241695970040F5FA /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		7E46112C2416A8050040F5FA /* IncomeMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeMessageCell.swift; sourceTree = "<group>"; };
+		7E46112D2416A8050040F5FA /* IncomeMessageCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncomeMessageCellView.xib; sourceTree = "<group>"; };
+		7E4611302416BD0D0040F5FA /* OutcomeMessageCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutcomeMessageCellView.xib; sourceTree = "<group>"; };
+		7E4611322416D0500040F5FA /* OutcomeMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutcomeMessageCell.swift; sourceTree = "<group>"; };
 		7E5D0DEC2402D088004B24D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7ED2709A23F6D637005E89D2 /* TFS-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFS-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED2709D23F6D637005E89D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7ED270A123F6D637005E89D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7ED270A123F6D637005E89D2 /* ConversationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsListViewController.swift; sourceTree = "<group>"; };
 		7ED270A423F6D637005E89D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ED270A623F6D639005E89D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ED270A923F6D639005E89D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +73,20 @@
 			isa = PBXGroup;
 			children = (
 				7ED2709D23F6D637005E89D2 /* AppDelegate.swift */,
-				7ED270A123F6D637005E89D2 /* MainViewController.swift */,
+				7ED270A123F6D637005E89D2 /* ConversationsListViewController.swift */,
 				7ED270A323F6D637005E89D2 /* Main.storyboard */,
 				7ED270A623F6D639005E89D2 /* Assets.xcassets */,
 				7ED270A823F6D639005E89D2 /* LaunchScreen.storyboard */,
 				7ED270AB23F6D639005E89D2 /* Info.plist */,
 				7E5D0DEC2402D088004B24D0 /* ProfileViewController.swift */,
+				7E461123240E4E740040F5FA /* ConversationCellView.xib */,
+				7E461125240E4E860040F5FA /* ConversationCell.swift */,
+				7E461128240EB1C60040F5FA /* CellModels.swift */,
+				7E46112A241695970040F5FA /* ConversationViewController.swift */,
+				7E46112C2416A8050040F5FA /* IncomeMessageCell.swift */,
+				7E46112D2416A8050040F5FA /* IncomeMessageCellView.xib */,
+				7E4611302416BD0D0040F5FA /* OutcomeMessageCellView.xib */,
+				7E4611322416D0500040F5FA /* OutcomeMessageCell.swift */,
 			);
 			path = "TFS-Chat";
 			sourceTree = "<group>";
@@ -126,8 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ED270AA23F6D639005E89D2 /* LaunchScreen.storyboard in Resources */,
+				7E4611312416BD0D0040F5FA /* OutcomeMessageCellView.xib in Resources */,
 				7ED270A723F6D639005E89D2 /* Assets.xcassets in Resources */,
 				7ED270A523F6D637005E89D2 /* Main.storyboard in Resources */,
+				7E461124240E4E740040F5FA /* ConversationCellView.xib in Resources */,
+				7E46112F2416A8050040F5FA /* IncomeMessageCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E461126240E4E860040F5FA /* ConversationCell.swift in Sources */,
+				7E46112E2416A8050040F5FA /* IncomeMessageCell.swift in Sources */,
 				7E5D0DED2402D088004B24D0 /* ProfileViewController.swift in Sources */,
-				7ED270A223F6D637005E89D2 /* MainViewController.swift in Sources */,
+				7E46112B241695980040F5FA /* ConversationViewController.swift in Sources */,
+				7E4611332416D0500040F5FA /* OutcomeMessageCell.swift in Sources */,
+				7ED270A223F6D637005E89D2 /* ConversationsListViewController.swift in Sources */,
+				7E461129240EB1C60040F5FA /* CellModels.swift in Sources */,
 				7ED2709E23F6D637005E89D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
