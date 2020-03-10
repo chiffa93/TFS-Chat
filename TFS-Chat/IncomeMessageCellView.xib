@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="incomeMessageCellId" id="Y62-Ee-yLt" customClass="IncomeMessageCell" customModule="TFS_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y62-Ee-yLt" id="8nC-uJ-etz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5I-lG-02N">
+                        <rect key="frame" x="8" y="8" width="193" height="28"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" text="Входящее сообщение" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCK-Ot-fcG">
+                                <rect key="frame" x="8" y="5" width="177" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tCK-Ot-fcG" secondAttribute="bottom" constant="5" id="4ts-fq-E6U"/>
+                            <constraint firstItem="tCK-Ot-fcG" firstAttribute="top" secondItem="y5I-lG-02N" secondAttribute="top" constant="5" id="Mia-v1-0Tv"/>
+                            <constraint firstAttribute="trailing" secondItem="tCK-Ot-fcG" secondAttribute="trailing" constant="8" id="VMD-tn-iFE"/>
+                            <constraint firstItem="tCK-Ot-fcG" firstAttribute="leading" secondItem="y5I-lG-02N" secondAttribute="leading" constant="8" id="W5e-Zb-H7b"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-bs-Gic">
+                        <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E9t-bs-Gic" firstAttribute="leading" secondItem="y5I-lG-02N" secondAttribute="trailing" priority="250" id="1wF-ye-7hi"/>
+                    <constraint firstItem="E9t-bs-Gic" firstAttribute="width" secondItem="8nC-uJ-etz" secondAttribute="width" multiplier="0.25" id="Ci6-id-dHj"/>
+                    <constraint firstAttribute="trailing" secondItem="E9t-bs-Gic" secondAttribute="trailing" id="PsG-9P-Gi4"/>
+                    <constraint firstAttribute="bottom" secondItem="y5I-lG-02N" secondAttribute="bottom" constant="8" id="T8w-57-lIn"/>
+                    <constraint firstItem="y5I-lG-02N" firstAttribute="leading" secondItem="8nC-uJ-etz" secondAttribute="leading" constant="8" id="Y4f-2l-EcI"/>
+                    <constraint firstItem="y5I-lG-02N" firstAttribute="top" secondItem="8nC-uJ-etz" secondAttribute="top" constant="8" id="poV-HK-LEf"/>
+                    <constraint firstAttribute="bottom" secondItem="E9t-bs-Gic" secondAttribute="bottom" id="skf-2o-60P"/>
+                    <constraint firstItem="E9t-bs-Gic" firstAttribute="top" secondItem="8nC-uJ-etz" secondAttribute="top" id="wHL-Ls-lzc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="incomeMessageLabel" destination="tCK-Ot-fcG" id="jUR-s0-UZx"/>
+                <outlet property="incomeMessageView" destination="y5I-lG-02N" id="Kh2-9l-p4g"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="44"/>
+        </tableViewCell>
+    </objects>
+</document>

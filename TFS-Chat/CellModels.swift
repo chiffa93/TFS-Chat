@@ -15,3 +15,6 @@ struct ConversatonCellModel {
     let isOnline: Bool
     let hasUnreadMessage: Bool
 }
+struct MessageCellModel {
+    let text: String
+}

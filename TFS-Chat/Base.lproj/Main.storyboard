@@ -39,6 +39,36 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="64.955357142857139"/>
         </scene>
+        <!--Conversaton View Controller-->
+        <scene sceneID="hPX-5S-2aU">
+            <objects>
+                <viewController storyboardIdentifier="conversation" id="hG7-4a-n42" customClass="ConversatonViewController" customModule="TFS_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Fu-ed-rBo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2kx-aj-MkY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2kx-aj-MkY" firstAttribute="leading" secondItem="gWy-dZ-RHS" secondAttribute="leading" id="2Lc-LT-P5I"/>
+                            <constraint firstItem="2kx-aj-MkY" firstAttribute="top" secondItem="gWy-dZ-RHS" secondAttribute="top" id="OTQ-SV-cZc"/>
+                            <constraint firstItem="2kx-aj-MkY" firstAttribute="bottom" secondItem="gWy-dZ-RHS" secondAttribute="bottom" id="TdU-aZ-ZMF"/>
+                            <constraint firstItem="2kx-aj-MkY" firstAttribute="trailing" secondItem="gWy-dZ-RHS" secondAttribute="trailing" id="wD1-6C-TOl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gWy-dZ-RHS"/>
+                    </view>
+                    <connections>
+                        <outlet property="messagesTable" destination="2kx-aj-MkY" id="tmB-JX-oC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iou-iF-qSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="66.964285714285708"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="fLL-Gp-ZUc">
             <objects>

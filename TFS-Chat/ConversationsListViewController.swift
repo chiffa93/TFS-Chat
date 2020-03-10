@@ -100,7 +100,18 @@ class ConversationsListViewController: UIViewController, UITableViewDelegate, UI
             cell.configure(with: messagesArray.filter{$0.isOnline == false}[indexPath.row])
             return cell
         }
-
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        guard let conversationViewController = storyBoard.instantiateViewController(withIdentifier: "conversation") as? ConversatonViewController else {
+            return print("error")
+        }
+        self.navigationController?.pushViewController(conversationViewController, animated: true)
+        
+        let cell = tableView.cellForRow(at: indexPath) as! ConversationCell
+        cell.isSelected = false
+        conversationViewController.navigationItem.title = cell.nameLabel.text
     }
 }
 
